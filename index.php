@@ -26,7 +26,11 @@ if (!$result){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="myCMS">
     <meta name="author" content="Richard">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Latest compiled and minified JavaScript -->
@@ -39,8 +43,8 @@ if (!$result){
 	<body id="page-top">
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 			<a class="navbar-brand" href="#page-top">RICHNET</a>
+			<a class="userLogin" href="admin/log-out.php">LOGOUT</a>
 			<a class="userLogin" href="admin/login.php">LOGIN</a>
-			<a class="userLogin" href="admin/login.php">LOGOUT</a>
 		</nav>
 		<header>
         <div class="header-content">
