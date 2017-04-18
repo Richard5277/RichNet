@@ -1,5 +1,7 @@
 <?php
 
+include('login-check.php');
+
 session_start();
 if(empty($_SESSION['is_logged_in'])){
 	header('location:login.php');

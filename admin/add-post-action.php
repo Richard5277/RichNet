@@ -2,12 +2,15 @@
 
 include('login-check.php');
 include('../database.php');
+include('thumbnail-function.php');
 
 //check if file was included
 if (!empty($_FILES['image']['name'])) {
 	
 	// move from temp to uploads folder
 	move_uploaded_file($_FILES['image']['tmp_name'], '../uploads/' . $_FILES['image']['name']);
+
+
 }
 
 // Prepare SQL statement
@@ -28,4 +31,5 @@ $sql->execute();
 ?>
 
 <h1>Post Added</h1>
-<a href="index.php">Post Added! Go Back to Website</a>
+<a href="index.php">Post Added! Go Back to Admin</a><br><br>
+<a href="../index.php">Post Added! Go Back to Website</a>

@@ -1,7 +1,7 @@
 <?php
 
 include('database.php');
-
+include('thumbnail.php');
 // load our posts from database
 $result = $db_connection->query('
 	SELECT * FROM Posts
@@ -26,14 +26,9 @@ if (!$result){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="myCMS">
     <meta name="author" content="Richard">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -44,15 +39,15 @@ if (!$result){
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 			<a class="navbar-brand" href="#page-top">RICHNET</a>
 			<a class="userLogin" href="admin/log-out.php">LOGOUT</a>
-			<a class="userLogin" href="admin/login.php">LOGIN</a>
+			<a class="userLogin" href="admin/index.php">ADMIN</a>
 		</nav>
 		<header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Manage Your Digital Store</h1>
+                <h1 id="homeHeading">Build Your Digital Store</h1>
                 <hr>
                 <p>RICHNET is the way to build your digital empire!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll richbtn">Find Out More</a>
+                <a href="#services" class="btn btn-primary btn-xl page-scroll richbtn">Find Out More</a>
             </div>
         </div>
     </header>
@@ -97,37 +92,39 @@ if (!$result){
                 </div>
             </div>
         </div>
-    	</section>
+    </section>
 
-		<div>
-			<?php while($row = $result->fetch()): ?>
-					<h2><?php echo $row['Title']; ?></h2>
-					<h3><?php echo $row['Summary']; ?></h3>
-					<a href="post.php?id=<?php echo $row['ID']; ?>">Read Post</a>
-				<?php endwhile; ?>
-		</div>
-		
-	    <section class="no-padding" id="portfolio">
-	        <div class="container-fluid">
-	            <div class="row no-gutter popup-gallery">
-	                <div class="col-lg-4 col-sm-6">
-	                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-	                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-	                        <div class="portfolio-box-caption">
-	                            <div class="portfolio-box-caption-content">
+    <section class="no-padding" id="portfolio">
+		<div class="container-fluid">
+			<div class="row no-gutter popup-gallery">	
+				<?php while($row = $result->fetch()): ?>
+					<div class="col-lg-4 col-sm-6">
+						<a href="post.php?id=<?php echo $row['ID']; ?>" class="portfolio-box">
+							<img src="../uploads/<?php echo $row['Image']; ?>" class="img-responsive" alt="image">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
 	                                <div class="project-category text-faded">
-	                                    Category
+	                                    <?php echo $row['Title']; ?>
 	                                </div>
 	                                <div class="project-name">
-	                                    Project Name
+	                                    <?php echo $row['Summary']; ?>
 	                                </div>
-	                            </div>
-	                        </div>
-	                    </a>
-	                </div>
+                            	</div>
+							</div>
+						</a>
+					</div>
+				<?php endwhile; ?>
+			</div>
+		</div> 
+		</section>
+
+		<aside class="bg-dark">
+	        <div class="container text-center">
+	            <div class="call-to-action">
+	                <h2>Free Tryout For 10 Days!</h2>
 	            </div>
 	        </div>
-	    </section>
+	    </aside>
 
 	    <section id="contact">
 	        <div class="container">

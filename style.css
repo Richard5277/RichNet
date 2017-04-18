@@ -59,7 +59,7 @@ aside {
 
 /*nav bar*/
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: rgba(17,23,18,0.3);
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
@@ -74,7 +74,7 @@ aside {
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
+  color: rgba(224, 84, 51, 1);
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
@@ -145,15 +145,17 @@ header .header-content .header-content-inner p {
     color: #eee9e9;
   }
   .navbar-default {
-    background-color: transparent;
+
+    background-color: rgba(17, 23, 18, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
+
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: white;
+    color: rgba(224, 84, 51, 1);
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
@@ -173,7 +175,7 @@ header .header-content .header-content-inner p {
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: rgba(224, 84, 51, 1);
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {

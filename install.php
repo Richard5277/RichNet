@@ -39,14 +39,14 @@ $sql = $db_connection->prepare('
 $sql->bindParam(1, password_hash('123', PASSWORD_DEFAULT));
 $sql->execute();
 
-// header('location:index.php');
+header('location:index.php');
 
-// If result is false, something went wrong
-// if (!$result) {
-// 	$error = $db_connection->errorInfo();
-// 	echo 'Someting went wrong' .$error[2];
-// 	exit();
-// }
+If result is false, something went wrong
+if (!$result) {
+	$error = $db_connection->errorInfo();
+	echo 'Someting went wrong' .$error[2];
+	exit();
+}
 
 ?>
 
