@@ -1,0 +1,46 @@
+html, body{
+	margin:0;
+	padding: 0;
+	background-color: rgba(12,12,12,1);
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+div{
+	text-align: center;
+	width: 45%;
+	margin: 20% auto;
+	display: block;
+}
+h1{
+	color: rgba(200,200,200,1);
+}
+a{
+	text-decoration: none;
+	display: block;
+	margin-top: 60px;
+	font-size: 2.6rem;
+	color: rgba(224, 84, 51, 1);
+	-webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+a:hover{
+	font-size: 3.2rem;
+	text-decoration: none;
+	color: rgba(200,200,200,1);
+	background-color: purple;
+}
+@media (max-width: 768px) {
+	div{
+	text-align: center;
+	width: 100%;
+	margin: 20% auto;
+	display: block;
+}
+	h1{
+		font-size: 2.3rem;
+	color: rgba(200,200,200,1);
+}
+}

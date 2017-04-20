@@ -38,7 +38,7 @@ if (!$result){
 	<body id="page-top">
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 			<a class="navbar-brand" href="#page-top">RICHNET</a>
-			<a class="userLogin" href="admin/log-out.php">LOGOUT</a>
+			<!-- <a class="userLogin" href="admin/log-out.php">LOGOUT</a> -->
 			<a class="userLogin" href="admin/index.php">ADMIN</a>
 		</nav>
 		<header>
@@ -121,7 +121,7 @@ if (!$result){
 		<aside class="bg-dark">
 	        <div class="container text-center">
 	            <div class="call-to-action">
-	                <h2>Free Tryout For 10 Days!</h2>
+	                <h2>Register For 10 Days Free Tryout !</h2>
 	            </div>
 	        </div>
 	    </aside>

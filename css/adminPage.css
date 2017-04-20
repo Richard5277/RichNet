@@ -1,0 +1,173 @@
+html, body{
+	margin:0;
+	padding: 0;
+	background-color: rgba(12,12,12,1);
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+th{
+	font-size: 2.6rem;
+}
+.title h1{
+	text-align: center;
+	font-size: 2.6rem;
+	font-weight: bolder;
+}
+.adminMain{
+	padding: 0;
+	margin:0;
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,0.7);
+    z-index: 10;
+}
+.sideMenu{
+	height: 100%;
+	background-color: #DDDBCB;
+	display: inline-block;
+	margin: auto 0;
+	text-align: center;
+	-webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.separator{
+	margin: auto;
+	text-align: center;
+	width: 60%;
+	height: 3px;
+	background-color: black;
+}
+.menuLink{
+	margin-top: 130px;
+	text-align: center;
+}
+.sideMenu a{
+	font-size: 2.6rem;
+	color: rgba(254,254,254,1);
+	text-decoration: none; 
+	 -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.menuLink span a {
+    padding: 10px 0;
+    margin: 5px 0;
+    display: inline-block;
+}
+.sideMenu:hover{
+	background-color: yellow;
+}
+.sideMenu a:hover{
+	font-size: 2.8rem;
+	color: rgba(254,254,254,1);
+	text-decoration: none;
+	color: black;
+}
+.adminTable{
+	padding-top: 20px;
+	background-color: #1B9AAA;
+	height: 100%;
+}
+
+.tableContent{
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+.tableContent table{
+	margin: 0 auto;
+	width: 90%;
+}
+}
+.tableContent table thead th{
+	font-size: 2.6rem;
+}
+.adminEdit a{
+	color: #F0F7EE;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.adminDelete a{
+	color: red;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.adminEdit{
+	padding:0;
+	margin: 0;
+	text-align: center;
+}
+.adminDelete{
+	padding:0;
+	margin: 0;
+	text-align: center;
+}
+.adminDelete:hover{
+	padding:0;
+	margin: 0;
+	font-size: 2.4rem;
+}
+.adminEdit:hover{
+	padding:0;
+	margin: 0;
+	font-size: 2.4rem;
+}
+.adminEdit a:hover{
+	/*color: #F0F7EE;*/
+	/*font-size: 2.4rem;*/
+}
+.adminDelete a:hover{
+	/*color:red;*/
+	/*font-size: 2.4rem;*/
+}
+.singleProject{
+    margin: 20px;
+    height: 60px;
+    font-size: 2.18rem;
+    border-bottom: 2px solid black;
+}
+
+@media (max-width: 768px) {
+th{
+	font-size: 1.6rem;
+}
+.singleProject{
+    margin: 20px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+}
+.sideMenu{
+	width: 100%;
+	height: 38%;
+	background-color: #DDDBCB;
+	display: inline-block;
+	margin: auto 0;
+}
+.sideMenu span{
+	/*background-color: red;*/
+}
+.menuLink{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+.adminDelete:hover{
+	padding:0;
+	margin: 0;
+	font-size: 1.65rem;
+}
+.adminEdit:hover{
+	padding:0;
+	margin: 0;
+	font-size: 1.65rem;
+}
+}

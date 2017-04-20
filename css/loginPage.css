@@ -8,7 +8,7 @@ body {
 }
 
 .container {  
-	background-color: rgba(232, 232, 232, 0.2);
+	background-color: rgba(254, 254, 254, 0.1);
 	width: 50%;
 	height: auto;
 	margin: auto;
@@ -72,7 +72,8 @@ img.avatar {
 @media (max-width: 768px) {
 
     .container { 
-    	background-color: #171113;
+    	/*background-color: #171113;*/
+    	background-color: rgba(254, 254, 254, 0.2);
 		width: 100%;
 		height: 100%;
 		margin: 0;

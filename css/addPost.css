@@ -1,0 +1,114 @@
+html, body{
+	margin:0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	/*color: white;*/
+	background-color: rgba(12,12,12,1);
+}
+h1{
+	color: white;
+}
+.title{
+	color: white;
+	display: block;
+	margin: 16px auto;
+	text-align: center;
+}
+.singleLabel{
+	font-size: 2.65rem;
+	font-weight: normal;
+	display: block;
+}
+.inputSection{
+	width: 100%;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=file]{
+	background-color: rgba(12,12,12,0.2);
+    height: 22px;
+    color: black;
+    width: 100%;
+}
+.submitBT{
+	display: inline-block;
+	width: 100%;
+	margin:0 auto;
+	/*margin-top: 6px;*/
+	text-align: center;
+}
+button {
+	/*float: left;*/
+	margin-top: 16px;
+    width: 100%;
+    background-color: rgba(224, 84, 51, 1);
+    color: white;
+    padding: 8px 18px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+button:hover {
+    background-color: rgba(12, 12, 12, 1);
+    color: rgba(224, 84, 51, 1);
+}
+.cancelBT{
+	margin-top: 16px;
+    width: 100%;
+    background-color: rgba(224, 84, 51, 1);
+    color: white;
+    padding: 8px 18px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-align: center;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+	color: rgba(224, 84, 51, 1);
+}
+.cancelBT:hover{
+	background-color: rgba(12, 12, 12, 1);
+    color: rgba(224, 84, 51, 1);
+}
+
+@media (max-width: 768px) {
+.title{
+font-size: 2.2rem;
+color: white;
+display: block;
+margin: 16px auto;
+text-align: center;
+}
+.singleLabel{
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+}

@@ -12,6 +12,7 @@ $sql->bindParam(1, $_GET['id']);
 $post = $sql->fetch();
 
 if (!empty($post['Image'])) {
+	//delete image from uploads
 	unlink('../uploads/' . $post['Image']);
 }
 
